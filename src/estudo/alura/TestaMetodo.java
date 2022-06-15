@@ -11,5 +11,16 @@ public class TestaMetodo {
         boolean conseguiuRetirar = contaDoPaulo.saca(20);
         System.out.println(contaDoPaulo.saldo);
         System.out.println(conseguiuRetirar);
+
+        Conta contaDaMarcela = new Conta();
+        contaDaMarcela.deposita(1000);
+        boolean sucessoTransferencia = contaDaMarcela.transfere(300, contaDoPaulo);
+        if(sucessoTransferencia){
+            System.out.println("Transferencia com sucesso");
+        }else{
+            System.out.println("faltou dinheiro");
+        }
+        System.out.println(contaDoPaulo.saldo);
+        System.out.println(contaDaMarcela.saldo);
     }
 }
