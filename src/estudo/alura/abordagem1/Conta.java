@@ -1,4 +1,4 @@
-package estudo.alura;
+package estudo.alura.abordagem1;
 
 class Conta {
     double saldo;
