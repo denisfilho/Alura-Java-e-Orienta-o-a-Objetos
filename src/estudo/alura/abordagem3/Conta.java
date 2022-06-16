@@ -1,12 +1,16 @@
 package estudo.alura.abordagem3;
 
-class Conta {
+public class Conta {
     private double saldo;
     private int agencia;
     private int numero;
     private Cliente titular;
+    private static int total;
 
     public Conta(int agencia, int numero){
+        Conta.total++;
+        System.out.println("o total de contas é " + total);
+
         this.agencia = agencia;
         this.numero = numero;
         System.out.println("Estou criando a conta " + this.numero);
@@ -69,5 +73,9 @@ class Conta {
 
     public void setTitular(Cliente titular) {
         this.titular = titular;
+    }
+
+    public static int getTotal() {
+        return Conta.total;
     }
 }
