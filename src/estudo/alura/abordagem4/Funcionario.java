@@ -3,14 +3,14 @@ package estudo.alura.abordagem4;
 public class Funcionario {
     private String nome;
     private String cpf;
-    private double salario;
+    protected double salario;
 
     public Funcionario(){
 
     }
 
     public double getBonificacao(){
-        return this.salario * 0.1;
+        return this.salario*0.1;
     }
 
     public String getNome() {
