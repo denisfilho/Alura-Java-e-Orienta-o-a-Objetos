@@ -1,6 +1,6 @@
 package estudo.alura.abordagem4;
 
-public class Funcionario {
+public abstract class Funcionario {
     private String nome;
     private String cpf;
     protected double salario;
