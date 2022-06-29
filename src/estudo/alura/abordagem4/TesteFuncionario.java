@@ -2,7 +2,9 @@ package estudo.alura.abordagem4;
 
 public class TesteFuncionario {
     public static void main(String[] args) {
-        Funcionario nico = new Gerente();
+
+
+        Gerente nico = new Gerente();
 
         nico.setNome("Nico Steppat");
         nico.setCpf("223355646-9");
