@@ -1,18 +1,15 @@
 package estudo.alura.abordagem4;
 
-public abstract class Autenticavel {
+/*
+Contrato Autenticável
 
-    private int senha;
+    Quem assina esse contrato precisa implementar
+    - Método setSenha
+    - Método autentica
+ */
+public abstract interface Autenticavel {
 
-    public void setSenha(int senha) {
-        this.senha = senha;
-    }
+    public void setSenha(int senha);
 
-    public boolean autentica(int senha) {
-        if(this.senha == senha) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    public boolean autentica(int senha);
 }
